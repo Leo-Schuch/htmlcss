@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mídias</title>
+</head>
+<style>
+    body
+    {background-color: blueviolet;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 
+{color:black ;
+}
+p{
+    color: darkkhaki;
+} 
+
+
+
+</style>
+
+<body>
+    
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="imagens/foto-m.png" type="image/png"> 
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em html5</p>
+    <audio preload="metadata" autoplay controls loop></audio> <!--metadata, o site carrega sem precisar carregar a música toda.  -->
+    <audio src="midia/As You Fade Away - NEFFEX.mp3" controls autoplay></audio> <!--não pega em todos os navegadores-->
+    <audio> <source src="midia/As You Fade Away - NEFFEX.mp3" type="audio/mpeg"></audio> 
+    <source src="midia/As You Fade Away - NEFFEX.ogg" type="audio/ogg">
+<source src="midia/As You Fade Away - NEFFEX.wav" type="audio/wav"><!--mp3,ogg,wav são os 3 tipos de arquivos mas tente evitar o arquivo wav pois é muito mais pesado.-->
+<p>infelizmente seu navegador não consegue produzir áudio</p>
+<a href="midia/As You Fade Away - NEFFEX.mp3">clique aqui para baixar o arquivo mp3</a>
+    
+</body>
+</html>
